@@ -9,13 +9,19 @@
 /* Begin PBXBuildFile section */
 		9638C36128647727000B90D7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9638C36028647727000B90D7 /* AppDelegate.swift */; };
 		9638C36328647727000B90D7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9638C36228647727000B90D7 /* SceneDelegate.swift */; };
-		9638C36528647727000B90D7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9638C36428647727000B90D7 /* ViewController.swift */; };
+		9638C36528647727000B90D7 /* ViewControllerWithMVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9638C36428647727000B90D7 /* ViewControllerWithMVC.swift */; };
 		9638C36828647727000B90D7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9638C36628647727000B90D7 /* Main.storyboard */; };
 		9638C36A2864772A000B90D7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9638C3692864772A000B90D7 /* Assets.xcassets */; };
 		9638C36D2864772A000B90D7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9638C36B2864772A000B90D7 /* LaunchScreen.storyboard */; };
 		9638C3782864772B000B90D7 /* Architecture_WalkthroughTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9638C3772864772B000B90D7 /* Architecture_WalkthroughTests.swift */; };
 		9638C3822864772B000B90D7 /* Architecture_WalkthroughUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9638C3812864772B000B90D7 /* Architecture_WalkthroughUITests.swift */; };
 		9638C3842864772B000B90D7 /* Architecture_WalkthroughUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9638C3832864772B000B90D7 /* Architecture_WalkthroughUITestsLaunchTests.swift */; };
+		9638C39328647C7B000B90D7 /* APIServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9638C39228647C7B000B90D7 /* APIServiceProtocol.swift */; };
+		9638C39628647CBE000B90D7 /* TodoEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9638C39528647CBE000B90D7 /* TodoEntity.swift */; };
+		9638C39828647EBC000B90D7 /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9638C39728647EBC000B90D7 /* APIService.swift */; };
+		9638C39C2864812B000B90D7 /* APIServiceMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9638C39B2864812B000B90D7 /* APIServiceMock.swift */; };
+		9638C39F2864836E000B90D7 /* TodoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9638C39E2864836E000B90D7 /* TodoTableViewCell.swift */; };
+		9638C3B128649592000B90D7 /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9638C3B028649592000B90D7 /* String+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,7 +45,7 @@
 		9638C35D28647727000B90D7 /* Architecture Walkthrough.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Architecture Walkthrough.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9638C36028647727000B90D7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9638C36228647727000B90D7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		9638C36428647727000B90D7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		9638C36428647727000B90D7 /* ViewControllerWithMVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerWithMVC.swift; sourceTree = "<group>"; };
 		9638C36728647727000B90D7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9638C3692864772A000B90D7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9638C36C2864772A000B90D7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -49,6 +55,12 @@
 		9638C37D2864772B000B90D7 /* Architecture WalkthroughUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Architecture WalkthroughUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9638C3812864772B000B90D7 /* Architecture_WalkthroughUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Architecture_WalkthroughUITests.swift; sourceTree = "<group>"; };
 		9638C3832864772B000B90D7 /* Architecture_WalkthroughUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Architecture_WalkthroughUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		9638C39228647C7B000B90D7 /* APIServiceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIServiceProtocol.swift; sourceTree = "<group>"; };
+		9638C39528647CBE000B90D7 /* TodoEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoEntity.swift; sourceTree = "<group>"; };
+		9638C39728647EBC000B90D7 /* APIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
+		9638C39B2864812B000B90D7 /* APIServiceMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIServiceMock.swift; sourceTree = "<group>"; };
+		9638C39E2864836E000B90D7 /* TodoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoTableViewCell.swift; sourceTree = "<group>"; };
+		9638C3B028649592000B90D7 /* String+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,13 +111,16 @@
 		9638C35F28647727000B90D7 /* Architecture Walkthrough */ = {
 			isa = PBXGroup;
 			children = (
+				9638C3AF28649586000B90D7 /* Extensions */,
+				9638C39028647C5A000B90D7 /* Model */,
 				9638C36028647727000B90D7 /* AppDelegate.swift */,
 				9638C36228647727000B90D7 /* SceneDelegate.swift */,
-				9638C36428647727000B90D7 /* ViewController.swift */,
+				9638C36428647727000B90D7 /* ViewControllerWithMVC.swift */,
 				9638C36628647727000B90D7 /* Main.storyboard */,
 				9638C3692864772A000B90D7 /* Assets.xcassets */,
 				9638C36B2864772A000B90D7 /* LaunchScreen.storyboard */,
 				9638C36E2864772A000B90D7 /* Info.plist */,
+				9638C39E2864836E000B90D7 /* TodoTableViewCell.swift */,
 			);
 			path = "Architecture Walkthrough";
 			sourceTree = "<group>";
@@ -113,6 +128,7 @@
 		9638C3762864772B000B90D7 /* Architecture WalkthroughTests */ = {
 			isa = PBXGroup;
 			children = (
+				9638C39928648112000B90D7 /* Model */,
 				9638C3772864772B000B90D7 /* Architecture_WalkthroughTests.swift */,
 			);
 			path = "Architecture WalkthroughTests";
@@ -125,6 +141,56 @@
 				9638C3832864772B000B90D7 /* Architecture_WalkthroughUITestsLaunchTests.swift */,
 			);
 			path = "Architecture WalkthroughUITests";
+			sourceTree = "<group>";
+		};
+		9638C39028647C5A000B90D7 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				9638C39428647CA5000B90D7 /* Entity */,
+				9638C39128647C6B000B90D7 /* Service */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		9638C39128647C6B000B90D7 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				9638C39228647C7B000B90D7 /* APIServiceProtocol.swift */,
+				9638C39728647EBC000B90D7 /* APIService.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		9638C39428647CA5000B90D7 /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				9638C39528647CBE000B90D7 /* TodoEntity.swift */,
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		9638C39928648112000B90D7 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				9638C39A28648119000B90D7 /* Service */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		9638C39A28648119000B90D7 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				9638C39B2864812B000B90D7 /* APIServiceMock.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		9638C3AF28649586000B90D7 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				9638C3B028649592000B90D7 /* String+Extension.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -258,8 +324,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9638C36528647727000B90D7 /* ViewController.swift in Sources */,
+				9638C3B128649592000B90D7 /* String+Extension.swift in Sources */,
+				9638C39F2864836E000B90D7 /* TodoTableViewCell.swift in Sources */,
+				9638C39628647CBE000B90D7 /* TodoEntity.swift in Sources */,
+				9638C39328647C7B000B90D7 /* APIServiceProtocol.swift in Sources */,
+				9638C36528647727000B90D7 /* ViewControllerWithMVC.swift in Sources */,
 				9638C36128647727000B90D7 /* AppDelegate.swift in Sources */,
+				9638C39828647EBC000B90D7 /* APIService.swift in Sources */,
 				9638C36328647727000B90D7 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -268,6 +339,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9638C39C2864812B000B90D7 /* APIServiceMock.swift in Sources */,
 				9638C3782864772B000B90D7 /* Architecture_WalkthroughTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
