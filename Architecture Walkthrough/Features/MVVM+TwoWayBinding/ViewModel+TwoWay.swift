@@ -1,13 +1,13 @@
 //
-//  ViewModel+OneWay.swift
+//  ViewModel+TwoWay.swift
 //  Architecture Walkthrough
 //
-//  Created by Andrew Maher on 26/06/2022.
+//  Created by Andrew Maher on 28/06/2022.
 //
 
 import Foundation
 
-class ViewModelOneWay{
+class ViewModelTwoWay{
     
     private let apiService: APIServiceProtocol = APIService()
     private var todos: [TodoEntity] = []
@@ -38,7 +38,7 @@ class ViewModelOneWay{
         }
     }
     
-    func validateEmail(email: String?){
+    @objc func validateEmail(email: String?){
         isValidEmail.value = email?.validateEmail() ?? false
     }
 }

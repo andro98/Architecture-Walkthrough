@@ -7,7 +7,8 @@
 
 import UIKit
 
-class ViewControllerWithMVVM_OneWayBinding: UIViewController {
+class ViewControllerWithMVVM_OneWayBinding: UIViewController, Storyborded {
+    weak var coordinator: MainCoordinator?
     
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var activityIndicator: UIActivityIndicatorView!

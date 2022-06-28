@@ -8,10 +8,52 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
+        <!--Page One View Controller-->
+        <scene sceneID="2mM-F8-f4k">
+            <objects>
+                <viewController storyboardIdentifier="PageOneViewController" id="Muh-vW-0dj" customClass="PageOneViewController" customModule="Architecture_Walkthrough" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="WAr-Ms-jAx">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="Q8p-TV-DKn">
+                                <rect key="frame" x="147" y="407" width="120.5" height="82"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nlv-Zl-baF">
+                                        <rect key="frame" x="0.0" y="0.0" width="120.5" height="31"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="First screen"/>
+                                        <connections>
+                                            <action selector="firstScreenTapped:" destination="Muh-vW-0dj" eventType="touchUpInside" id="UPd-zW-O4O"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gIF-i0-uua">
+                                        <rect key="frame" x="0.0" y="51" width="120.5" height="31"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="Second screen"/>
+                                        <connections>
+                                            <action selector="secondScreenTapped:" destination="Muh-vW-0dj" eventType="touchUpInside" id="nlt-6x-S98"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="ZXk-nG-JHI"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Q8p-TV-DKn" firstAttribute="centerY" secondItem="WAr-Ms-jAx" secondAttribute="centerY" id="CK5-vg-WIt"/>
+                            <constraint firstItem="Q8p-TV-DKn" firstAttribute="centerX" secondItem="WAr-Ms-jAx" secondAttribute="centerX" id="edA-o4-nBc"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xOE-FW-npl" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="504" y="-611"/>
+        </scene>
         <!--View Controller WithMVVM One Way Binding-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewControllerWithMVVM_OneWayBinding" customModule="Architecture_Walkthrough" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ViewControllerWithMVVM_OneWayBinding" id="BYZ-38-t0r" customClass="ViewControllerWithMVVM_OneWayBinding" customModule="Architecture_Walkthrough" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -100,6 +142,33 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="139" y="116"/>
+        </scene>
+        <!--Page Two View Controller-->
+        <scene sceneID="6ST-Fb-LYz">
+            <objects>
+                <viewController storyboardIdentifier="PageTwoViewController" id="akn-Xk-yOI" customClass="PageTwoViewController" customModule="Architecture_Walkthrough" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="wCO-DU-Bml">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Test Screen 2" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tpJ-91-CSw">
+                                <rect key="frame" x="155" y="437.5" width="104" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="wsJ-bq-lvb"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="tpJ-91-CSw" firstAttribute="centerY" secondItem="wCO-DU-Bml" secondAttribute="centerY" id="FMZ-s5-TJ0"/>
+                            <constraint firstItem="tpJ-91-CSw" firstAttribute="centerX" secondItem="wCO-DU-Bml" secondAttribute="centerX" id="yeb-n5-PUH"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Fmi-pD-Jd7" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1110" y="116"/>
         </scene>
     </scenes>
     <resources>
